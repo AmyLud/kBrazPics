@@ -1,0 +1,125 @@
+// Globals
+
+html {
+     font-size: 62.5%;
+     scroll-behavior: smooth;
+     body {
+          font-size: 1.8rem;
+     }
+     a {
+          text-decoration: none;
+          color: $deepColor;
+     }
+     ul {
+          list-style: none;
+     }
+     img {
+          width: 100%;
+     }
+}
+
+// wrapper Globals
+
+.wrapper {
+     // border: 1px solid red;
+     width: 85%;
+     max-width: 1240px;
+     margin: 0 auto;
+}
+
+// Font Globals
+
+.content,
+.copyright {
+     @include content-font(1.6rem);
+     letter-spacing: 1px;
+     line-height: 1.5;
+}
+.title--smallest {
+     @include title-font(2rem);
+     margin-top: 0;
+}
+.title--small {
+     @include title-font(3.2rem);
+     .title__link {
+          @extend .title--small;
+     }
+}
+.title--large {
+     @include title-font(4.2rem);
+}
+.main-title {
+     @include header-font(8rem);
+}
+.main-title--main-page {
+     @include header-font(10rem);
+     line-height: 20rem;
+}
+
+// Button Global
+
+.contact-me__input {
+     @include content-font(2rem);
+}
+
+.diagonal-gray {
+    position: relative;
+    bottom: -15px;
+    pointer-events: none;
+    z-index: 100;
+    margin-top: 50px;
+}
+
+.light-triangle {
+      background: $lightColor;
+      fill: $primeColor;
+}
+
+.dark-triangle {
+     background: $primeColor;
+      fill: $lightColor;
+}
+
+
+
+.more-button {
+     width: fit-content;
+     &__link {
+          background: $accentColor;
+          display: block;
+          padding: 10px 20px;
+          // font-weight: bold;
+          @include content-font(2rem);
+          border: 5px solid $accentColor;
+          transition: background 0.1s, color 0.1s, border 0.1s;
+          color: $deepColor;
+          &:hover {
+               background: $deepColor;
+               color: $lightColor;
+               border: 5px solid $deepColor;
+
+          }
+     }
+}
+
+
+.skip-link {
+     @include content-font(2.3rem);
+     text-transform: uppercase;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    left: -2000px;
+    top: 10px;
+    z-index: 100;
+    background: $primeColor;
+    color: $lightColor;
+    &:focus {
+          left: 0px;
+          outline: none;
+          text-decoration: underline;
+
+     }
+}
+

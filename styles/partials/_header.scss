@@ -1,0 +1,75 @@
+.header--main {
+     background: url(https://images.unsplash.com/photo-1547974996-050bf23b6196?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80) 90% 60%;
+     
+     background-size: cover;
+     background-attachment: fixed;
+     height: 100vh;
+     .wrapper {
+          // border: 1px dashed black;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          height: 100%;
+     }
+}
+
+.diagonal.home-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: none;
+    z-index: 99;
+    left: auto;
+}
+.diagonal.home-left, .diagonal.home-right path {
+    fill: $lightColor;
+    stroke: $lightColor;
+    stroke-width: 4;
+}
+.diagonal.home-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: none;
+    z-index: 99;
+}
+
+
+.header--about {
+     background: url(assets/contact-image-1.jpg);
+     background-size: cover;
+     height: 60vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     .wrapper {
+          height: 100%;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+     
+}
+
+.main-title {
+  
+     &--main-page {
+          color: white;
+     }
+     &--about-page {
+          font-size: 7rem;
+          position: relative;
+          bottom: -160px;
+          z-index: 100;
+
+     }
+     &--gallery-page {
+          color: $lightColor;
+          font-size: 7rem;
+
+     }
+}
+
+

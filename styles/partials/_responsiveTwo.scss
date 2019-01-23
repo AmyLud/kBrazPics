@@ -1,0 +1,65 @@
+// Nav @ 670px
+
+@media (max-width: 670px) {
+
+
+
+     .blog {
+          .aside {
+               flex-direction: column;
+
+               &__about, 
+               &__posts {
+                    width: 100%;
+                    border-top: 5px solid $secondColor;
+               }
+
+          }
+
+     }
+
+     .blog-section {
+          &__post {
+               display: block;
+               // margin: 0;
+          }
+
+          &__picture {
+               position: static;
+               max-width: 100%;
+
+          }
+          &__img {
+               position: static;
+               width: 100%;
+          }
+
+          &__description,
+          &__description--right {
+               text-align: center;
+               align-items: center;
+          }
+
+          &__content--left, 
+          &__content--right {
+               width: 100%;
+          }
+     }
+
+     .gallery-section {
+          &__pic {
+          margin: 0;
+          }
+     }
+
+
+
+     .header--small-plants,
+     .header--large-plants {
+          .wrapper {
+               height: 100%;
+          }
+     } 
+
+}    
+     

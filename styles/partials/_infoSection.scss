@@ -1,0 +1,57 @@
+.info-section {
+     background: $lightColor;
+     padding: 50px 0 0;
+     .title--small {
+          margin: 0;
+     }
+
+     &--wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          // margin: 50px auto;
+          padding: 50px 0;
+     }
+
+}
+
+.highlights {
+     h3 {
+          text-align: right;
+     }
+
+     .highlight {
+          
+     }
+
+}
+
+blockquote {
+          width: 85%;
+          margin: 0 auto;
+          p {
+               font-style: italic;
+               text-align: justify;
+               width: 100%;
+               display: block;
+               padding: 20px;
+               position: relative;
+          }
+          .quote::before {
+          content: "“";
+          font-style: normal;
+          font-size: 30rem;
+          position: absolute;
+          top: -100px;
+          left: 0px;
+          opacity: 0.2;
+          }
+          .quote::after {
+          content: "”";
+          font-style: normal;
+          font-size: 30rem;
+          position: absolute;
+          bottom: -250px;
+          right: 0px;
+          opacity: 0.2;
+          }
+     }

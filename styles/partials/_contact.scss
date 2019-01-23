@@ -1,0 +1,139 @@
+.contact-page {
+     // border: 1px dashed black;
+     background: $primeColor;
+     padding: 50px 0 0;
+     
+}    
+.darkest-triangle {
+     background: $deepColor;
+      fill: $primeColor;
+     margin-top: 0px; 
+     }
+
+
+.contact-title {
+     margin: 0px;
+     margin-bottom: 15px;
+}
+.background {
+     .wrapper {
+          padding: 50px 0 0;
+
+     }
+     &--wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 20px 0;
+     }
+}
+
+.contact-info {
+     flex: 1 0 35%;
+     margin: 0 30px 25px 0;
+     // margin: 10px;
+     // height: 30vh;
+     
+     .info-box__social {
+          display: flex;
+     }
+     .social-link {
+          color: $deepColor;
+          margin: 0 10px;
+          padding: 10px;
+          font-size: 3rem; 
+          // border: 1px solid green;
+          display: flex;
+          align-items: center;
+
+          img {
+               width: 27px;
+               // border: 1px solid red;
+               // margin-top: 10px;
+          }
+          i {
+               // border: 1px solid red;
+          }
+     }
+     .info-box {
+          position: relative;
+          z-index: 10;
+          border-bottom: 5px solid $accentColor;
+          border-left: 5px solid $accentColor;
+          padding: 30px 20px;
+          background: white;
+          
+     }
+     .info-box__info {
+          margin: 0;
+          padding: 0 10px;
+          &--bold {
+               font-weight: bold;
+               padding: 0 10px;
+          }
+     }
+
+}
+
+
+.contact-me {
+     flex: 2 0 60%;
+     
+     .more-button {
+          margin-top: 30px;
+          @extend .more-button__link;
+          // width: 100%;
+          border: none;
+          height: 55px;
+          border: 5px solid $accentColor;
+     }
+     
+     &__details {
+          display: flex;
+          justify-content: space-between;
+     }
+     
+     &__input {
+          display: block;
+          border: none;
+          // background: transparent;
+          border-bottom: 5px solid $accentColor;
+          margin-bottom: 10px;
+          width: calc(50% - 10px);
+          height: 75px;
+          padding: 15px;
+          color: $deepColor;         
+     
+          &--large {
+               @extend .contact-me__input;
+               width: 100%;
+               min-width: 100%;
+               max-width: 100%;
+               height: 300px;
+               resize: none;
+               box-shadow: -185px -50px 0px $accentColor, -5px 0px 0px $accentColor;
+          }
+     }
+     ::placeholder {
+          color: $deepColor;
+          opacity: 1;
+     }
+     .submit-arrow {
+          margin-left: 15px;
+     }
+}
+
+
+
+.visually-hidden:not(:focus):not(:active) {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+}

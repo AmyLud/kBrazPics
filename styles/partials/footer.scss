@@ -1,0 +1,31 @@
+footer {
+     background: $deepColor;
+     color: $deepAccentColor;
+     padding: 50px 0;
+     a {
+          color: $deepAccentColor;
+          padding: 15px;
+          transition: color 0.1s;
+          &:hover {
+               color: lighten($deepAccentColor, 10);
+          }
+     }
+     ul {
+          display: flex;
+          justify-content: space-around;
+          width: 75%;
+          margin: 0 auto;
+     }
+     li {
+          margin: 20px;
+     }
+     
+}
+.copyright {
+     padding: 1px;
+     &__message {
+          width: 100%;
+          text-align: center;
+          margin: 10px auto;
+     }
+}

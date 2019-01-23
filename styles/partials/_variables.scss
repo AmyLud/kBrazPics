@@ -1,0 +1,35 @@
+$deepAccentColor: #bcbcbc;
+$secondColor: #bcbcbc;
+$accentColor: #e2e2e2;
+$deepColor: #1f1f1f;
+$lightColor: #f5f5f5;
+$primeColor: #fcfcfc;
+
+@mixin header-font($size) {
+     font-family: "montserrat", sans-serif;
+     font-size: $size;
+     font-weight: bold;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+}
+
+@mixin title-font($size) {
+font-family: "montserrat", sans-serif;
+     font-size: $size;
+     font-weight: bold;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+}
+
+@mixin content-font($size) {
+     font-family: "montserrat", sans-serif;
+     font-size: $size;
+}
+
+
+
+
+
+
+
+
