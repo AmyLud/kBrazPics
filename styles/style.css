@@ -327,7 +327,7 @@ html {
 .main-title--about-page {
   font-size: 7rem;
   position: relative;
-  bottom: -160px;
+  bottom: -210px;
   z-index: 100; }
 
 .main-title--gallery-page {
@@ -565,6 +565,9 @@ html {
 
 .collection {
   position: relative; }
+  .collection .gallery-section__pic {
+    -webkit-filter: grayscale(10);
+    filter: grayscale(10); }
   .collection__overlay {
     position: absolute;
     top: 0;
@@ -579,6 +582,9 @@ html {
     transition: opacity 0.5s; }
   .collection:hover .collection__overlay {
     opacity: 1; }
+  .collection:hover .gallery-section__pic {
+    -webkit-filter: none;
+    filter: none; }
 
 .info-section {
   background: #f5f5f5;
