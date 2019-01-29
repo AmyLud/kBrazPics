@@ -557,9 +557,7 @@ html {
   .top-bar .menu-toggle:checked ~ .top-bar-nav {
     max-height: 300px;
     margin-left: 10px;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    max-width: 50%;
     overflow: hidden;
     padding: 10px;
     -webkit-transition: max-height 1s, padding 0.5s;
