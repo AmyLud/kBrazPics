@@ -7,7 +7,8 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>KBrazPics | Home</title>
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-          crossorigin="anonymous">
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700" rel="stylesheet">
      <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -16,6 +17,7 @@
      <a href="#main" class="skip-link">Skip to main content</a>
 
      <header class="header--main">
+          <div class="headerOverlay"></div>
           <div class="top-bar">
                <div class="relativebar">
 
@@ -35,11 +37,13 @@
           </div>
           <div class="wrapper">
                     <h1 class="main-title--main-page">KBrazPics</h1>
+                    <h2 class="title--smallest">Capturing the beauty of change</h2>
+                    <a class="main--link" href="#main"><img src="./assets/arrow.png" alt="arrow down"></a>
           </div>
-          <svg class="diagonal home-left" width="21%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+          <svg class="diagonal home-left" width="21%" height="25%" viewBox="0 0 100 102" preserveAspectRatio="none">
                <path d="M0 100 L100 101 L0 10 Z"></path>
           </svg>
-          <svg class="diagonal home-right" width="80%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+          <svg class="diagonal home-right" width="80%" height="25%" viewBox="0 0 100 102" preserveAspectRatio="none">
                <path d="M0 100 L100 100 L100 10 Z"></path>
           </svg>
      </header>
@@ -49,7 +53,7 @@
                     <div class="blog-section__post blog-section__post--left">
                          <div class="blog-section__picture blog-section__picture--left">
                               <div class="blog-section__img-background blog-section__img-background--left">
-                                   <img class="blog-section__img" src="https://lightroom.adobe.com/v2c/spaces/e6b8eeefa22e49259981686b2619bd2f/assets/39233fed321e4108b5b010d61c9e4443/revisions/628c294b187e414c8a2b43986bdc6335/renditions/7394381a24a83e2a0f18550a3eb2c02b" alt="A Bridge crossing a river with waterfall in the background">
+                                   <img class="blog-section__img" src="https://lightroom.adobe.com/v2c/spaces/e6b8eeefa22e49259981686b2619bd2f/assets/0636cbba061c41d08cd9e716ad88210f/revisions/7352243aa6a14838a7f1d77c9b438970/renditions/6d552df169a11a93448f7eddfd323bfb" alt="A Bridge crossing a river with waterfall in the background">
                               </div>
                          </div>
                          <div class="blog-section__description">
@@ -67,7 +71,7 @@
                          </div>
                     </div>
                </div>
-               <svg class="diagonal-gray dark-triangle" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+               <svg class="diagonal-gray dark-triangle" width="100%" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L70 100 L100 0 Z"></path>
                </svg>
           </section>
@@ -75,7 +79,9 @@
               
                <div class="wrapper">
                     <h3 class="title--small">Collections</h3>
+               </div>     
                     <!-- <p class="content">Braznick’s specialty and popularity has grown rapidly with her collections</p> -->
+               <div class="wrapper gallery--wrapper">
                     <div class="grid">
                          <div class="collection">
                               <img class="gallery-section__pic" src="https://lightroom.adobe.com/v2c/spaces/e6b8eeefa22e49259981686b2619bd2f/assets/9f146948943e4fe6a90a69b0ef2e9640/revisions/baa5d90ec771459a8e57fa54a20b7722/renditions/5b98caed677f1452f959cd80f277abf8"
@@ -110,7 +116,7 @@
                                         </div>
                               </a>
                          </div>
-                         <div class="collection">
+                         <div class="collection wide">
                               <img class="gallery-section__pic" src="https://lightroom.adobe.com/v2c/spaces/8edecf854dff46b28b7befc139af5aea/assets/ea0161ee90b04c128e050c3ed0288483/revisions/a66b5303a7894fdfbc1d517509f1fc5b/renditions/3cf26dba995833d0de80fef7e2ac3b63"
                                    alt="Three Chess pieces forming a K">
                                    <a href="animalSpirit.html">
@@ -138,6 +144,16 @@
                                    <a href="animalSpirit.html">
                                         <div class="collection__overlay">
                                         <h4 class="title--smallest">Product photography</h4>
+                                        <a href="animalSpirit.html" class="view-link content">View Collection <span class="submit-arrow">&#x27a4</span></a>
+                                        </div>
+                              </a>
+                         </div>
+                         <div class="collection tall">
+                              <img class="gallery-section__pic" src="https://lightroom.adobe.com/v2c/spaces/b8d2060134c540d09f9797f827717513/assets/eb6e4c96923240f291a445bcb826264f/revisions/873e03add8f346128995b6dc42b12bd8/renditions/3a76d23938d7b7910ede4d137b9dfc31"
+                                   alt="Lemons in a bowl">
+                                   <a href="animalSpirit.html">
+                                        <div class="collection__overlay">
+                                        <h4 class="title--smallest">Splash of Colour</h4>
                                         <!-- <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique at culpa</p> -->
                                         <a href="animalSpirit.html" class="view-link content">View Collection <span class="submit-arrow">&#x27a4</span></a>
                                         </div>
@@ -145,14 +161,14 @@
                          </div>
                     </div>
                </div>
-               <svg class="diagonal-gray light-triangle" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+               <svg class="diagonal-gray light-triangle" width="100%" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L30 100 L100 0 Z"></path>
                </svg>
           </section>
           <section id="info" class="info-section">
                <div class="wrapper">
                     <div class="expertise">
-                         <h3 class="title--small">Expertise</h3>
+                         <h3 class="title--small">Expertise & highlights</h3>
                          <div class="info-section--wrapper">
                               <p class="content">A trained award-winning photographer, Braznick’s photography collections have begun to garner attention worldwide. Braznick has actively captured photography since she received her first camera as a young child and formerly studied Photographic Arts at Durham College in Ontario, Canada. </p>
                               <blockquote class="content"> 
@@ -162,15 +178,62 @@
                          </div>
                     </div>
                     <!-- <div class="highlights">
-                         <h3 class="title--small">Highlights</h3>
-                         <div class="info-section--wrapper">
-                              
+                         <div class="highlights__container main-carousel" data-flickity='{}'>
+                              <div class="highlight carousel-cell">
+                                        <h4 class="title--smallest">Principal Photographer Elevator Pitch Mastery</h4>
+                                        <p class="content">Photographs used in social media campaign</p>
+                                        <div class="more-button">
+                                             <a href="https://www.instagram.com/elevatorpitchmastery/" class="more-button__link">Take a Look</a>
+                                        </div>
+                              </div>
+                              <div class="highlight carousel-cell">
+                                        <h4 class="title--smallest">Principal Photographer Next Impact Press</h4>
+                                        <p class="content">Photographs used in social media campaign</p>
+                                        <div class="more-button">
+                                             <a href="https://www.sandygerber.com/blog/" class="more-button__link">Take a Look</a>
+                                        </div>
+                              </div>
+                              <div class="highlight carousel-cell">
+                                        <h4 class="title--smallest">Principal Photographer Dog Walk Happy</h4>
+                                        <p class="content">Photographs taken for Dog Walk Happy advertisements</p>
+                                        <div class="more-button">
+                                             <a href="https://www.instagram.com/dogwalkhappy/" class="more-button__link">Take a Look</a>
+                                        </div>
+                              </div>
+                              <div class="highlight carousel-cell">
+                                        <h4 class="title--smallest">Feature in Kawartha NOW Media & News Company IG</h4>
+                                        <p class="content">"Sunday Drive" featured in October 2018</p>
+                                        <div class="more-button">
+                                             <a href="https://www.instagram.com/p/Boq2rB8AD8b/" class="more-button__link">Take a Look</a>
+                                        </div>
+                              </div>
+                              <div class="highlight carousel-cell">
+                                        <h4 class="title--smallest">GuruShots | “Master” Status</h4>
+                                        <p class="content">Over 900,000 points and over 1400 acheivements</p>
+                                        <div class="more-button">
+                                             <a href="https://gurushots.com/kbraznick/photos" class="more-button__link">Take a Look</a>
+                                        </div>
+                              </div>
+                              <div class="highlight carousel-cell">
+                                        <h4 class="title--smallest">GuruShots | Top 100 finish "Newbie of the Month”</h4>
+                                        <p class="content">“Firesky on Rosseau” 87th place finish with 5M votes</p>
+                                        <div class="more-button">
+                                             <a href="https://gurushots.com/photo/fire+sky+on+lake+rosseau-d22e7f913a3e9976bc47b19130706f58" class="more-button__link">Take a Look</a>
+                                        </div>
+                              </div>
+                              <div class="highlight carousel-cell">
+                                        <h4 class="title--smallest">GuruShots | Top 100 finish “Clouds” contest</h4>
+                                        <p class="content">“Turn around!” 75th place finish with 28M votes</p>
+                                        <div class="more-button">
+                                             <a href="https://gurushots.com/photo/turn+around-3e9feaec4287dbe3ae0c13593e1bbd0a" class="more-button__link">Take a Look</a>
+                                        </div>
+                              </div>
                          </div>
-                    </div> -->
-                    
+                    </div>
+                     -->
                     
                </div>
-               <svg class="diagonal-gray dark-triangle" width="100%" height="170" viewBox="0 0 100 102" preserveAspectRatio="none">
+               <svg class="diagonal-gray dark-triangle" width="100%" viewBox="0 0 100 102" preserveAspectRatio="none">
                     <path d="M0 0 L70 100 L100 0 Z"></path>
                </svg>
           </section>
@@ -182,16 +245,16 @@
                     <section class="contact-info">
                          <div class="info-box">
                               <div class="info-box__social">
-                                   <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                                   <a class="social-link" href="#"><img src="./assets/guruTransparent.png" alt=""></a>
-                                   <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                   <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+                                   <a class="social-link" href="https://www.facebook.com/kbrazpics/"><i class="fab fa-facebook-f"></i></a>
+                                   <a class="social-link" href="https://gurushots.com/kbraznick/photos"><img src="./assets/cameraLens.png" alt=""></a>
+                                   <a class="social-link" href="https://www.linkedin.com/in/katherinebraznick/"><i class="fab fa-linkedin-in"></i></a>
+                                   <a class="social-link" href="https://www.instagram.com/kbrazpics/"><i class="fab fa-instagram"></i></a>
                               </div>
-                              <p class="info-box__info--bold content">info@email.com</p>
-                              <p class="info-box__info content">123-456-7890</p>
-                              <p class="info-box__info content">123 Queen Street West, Unit 10</p>
+                              <p class="info-box__info--bold content">kbrazpics@rogers.com</p>
+                              <!-- <p class="info-box__info content">123-456-7890</p> -->
+                              <!-- <p class="info-box__info content">123 Queen Street West, Unit 10</p> -->
                               <p class="info-box__info content">Toronto, Ontario</p>
-                              <p class="info-box__info content">M5V2D5</p>
+                              <!-- <p class="info-box__info content">M5V2D5</p> -->
                          </div>
                     </section>
                
@@ -211,18 +274,18 @@
                     </section>
                </div>
           </div>
-          <svg class="diagonal-gray darkest-triangle" width="100%" height="170" viewBox="0 0 100 105" preserveAspectRatio="none">
-               <path d="M0 0 L50 100 L100 0 Z"></path>
+          <svg class="diagonal-gray darkest-triangle" width="100%" viewBox="0 0 100 105" preserveAspectRatio="none">
+               <path d="M0 0 L50 50 L100 0 Z"></path>
           </svg>
      </main>
      <footer>
           <div class="wrapper">
                <div class="footer-socials">
                     <ul>
-                         <li><a href="#" class="content">facebook</a></li>
-                         <li><a href="#" class="content">guru</a></li>
-                         <li><a href="#" class="content">linked in</a></li>
-                         <li><a href="#" class="content">instagram</a></li>
+                         <li><a href="https://www.facebook.com/kbrazpics/" class="content">facebook</a></li>
+                         <li><a href="https://gurushots.com/kbraznick/photos" class="content">guru</a></li>
+                         <li><a href="https://www.linkedin.com/in/katherinebraznick/" class="content">linked in</a></li>
+                         <li><a href="https://www.instagram.com/kbrazpics/" class="content">instagram</a></li>
                     </ul>
                </div>
                <div class="copyright">
@@ -230,6 +293,7 @@
                </div>
           </div>
      </footer>
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

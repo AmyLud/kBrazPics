@@ -7,7 +7,7 @@
           // border: 1px dashed black;
           // margin: 20px 0;
           display: flex;
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
           align-items: center;
           justify-content: flex-start;
           .title--small {
@@ -30,6 +30,7 @@
 
      &__picture {
           // border: 1px solid red;
+          box-shadow: 185px -130px 0px $accentColor;
 
           width: 30%;
           // margin-left: 50px;
@@ -38,8 +39,8 @@
      
 
      &__img {
+          filter: grayscale(10);
           display: block;
           width: 100%;
-          box-shadow: 185px -130px 0px $accentColor;
      }
 }

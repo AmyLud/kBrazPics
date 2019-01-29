@@ -18,9 +18,32 @@
      h3 {
           text-align: right;
      }
-
+     &__container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+     }
+     
      .highlight {
-          
+          border: 5px solid $accentColor;
+          padding: 5px;
+          width: 32%;
+          // background: $primeColor;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+     }
+     .highlight-inside {
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+     }
+     .title--smallest {
+          font-size: 1.6rem;
+     }
+     p {
+          margin-top: 0;
      }
 
 }
