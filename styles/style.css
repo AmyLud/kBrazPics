@@ -254,24 +254,8 @@ html {
     outline: none;
     text-decoration: underline; }
 
-@-webkit-keyframes bounce {
-  0% {
-    width: 30px; }
-  50% {
-    width: 50px; }
-  100% {
-    width: 30px; } }
-
-@keyframes bounce {
-  0% {
-    width: 30px; }
-  50% {
-    width: 50px; }
-  100% {
-    width: 30px; } }
-
 .header--main {
-  background: url(/assets/header.jpg) 70% 100%;
+  background: url(https://lightroom.adobe.com/v2c/spaces/e6b8eeefa22e49259981686b2619bd2f/assets/3005dc09d73c428098e95fba9abcd0e9/revisions/6fb4ca9bcd584b72bf7308e093b6455b/renditions/a6d2639568842f8df592ad7b92068d7a) 70% 100%;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh; }
@@ -300,13 +284,9 @@ html {
   .header--main .title--smallest {
     z-index: 10; }
   .header--main .main--link {
-    position: absolute;
-    bottom: 30%;
     z-index: 10;
     color: #1f1f1f;
-    width: 50px;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite; }
+    width: 50px; }
 
 .diagonal.home-right {
   position: absolute;
