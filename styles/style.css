@@ -570,7 +570,8 @@ html {
     align-items: center;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    z-index: 10; }
     .blog-section__post .title--small, .blog-section__post .title--small .title__link, .title--small .blog-section__post .title__link {
       margin: 0; }
   .blog-section__description {
@@ -1201,6 +1202,8 @@ footer {
     margin: 0 auto; }
   .blog-section {
     padding-top: 50px; }
+    .blog-section .wrapper {
+      margin: 20px auto; }
     .blog-section__description {
       padding-left: 20px; } }
 
