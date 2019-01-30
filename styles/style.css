@@ -256,6 +256,7 @@ html {
 
 .header--main {
   background: url(https://lightroom.adobe.com/v2c/spaces/e6b8eeefa22e49259981686b2619bd2f/assets/3005dc09d73c428098e95fba9abcd0e9/revisions/6fb4ca9bcd584b72bf7308e093b6455b/renditions/a6d2639568842f8df592ad7b92068d7a) 70% 100%;
+  position: relative;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh; }
@@ -1033,7 +1034,7 @@ blockquote {
 footer {
   background: #1f1f1f;
   color: #bcbcbc;
-  padding: 0 0 50px 0; }
+  padding: 20px 0 50px 0; }
   footer a {
     color: #bcbcbc;
     padding: 25px;
@@ -1136,10 +1137,12 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .blog .aside__about, .blog .aside__posts {
+    .blog .aside__posts {
       width: 48%;
       border-top: 5px solid #bcbcbc; }
     .blog .aside__about-pic {
+      display: none; }
+    .blog .aside__about {
       display: none; }
   .header--main .willow-pic {
     max-width: 100%;
@@ -1304,10 +1307,9 @@ footer {
     display: none; } }
 
 @media (max-width: 500px) {
-  .gallery--wrapper {
-    width: 100%; }
-    .gallery--wrapper .grid {
-      grid-gap: 5px; }
+  .gallery--wrapper .grid {
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr); }
   .diagonal-gray {
     height: 70px; }
   .info-section__content {

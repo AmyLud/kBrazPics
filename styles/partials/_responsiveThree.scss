@@ -1,8 +1,9 @@
 @media (max-width: 500px) {
      .gallery--wrapper {
-          width: 100%;
+          // width: 100%;
           .grid {
                grid-gap: 5px;
+               grid-template-columns: repeat(2,  1fr);
           }
      }
      .diagonal-gray {

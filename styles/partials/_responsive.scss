@@ -12,13 +12,16 @@
                flex-direction: row;
                justify-content: space-between;
 
-               &__about, 
+               
                &__posts {
                     width: 48%;
                     border-top: 5px solid $secondColor;
                }
 
                &__about-pic {
+                    display: none;
+               }
+               &__about {
                     display: none;
                }
           }
